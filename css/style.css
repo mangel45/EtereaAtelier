@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #f7bbd3;
+}
+
 html,
 body {
     margin: 0;
@@ -78,6 +82,16 @@ a.navbar-brand {
     letter-spacing: 1px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
     position: relative;
+}
+
+.nav-logo, .banner-logo {
+    filter: invert(1);
+}
+.nav-logo {
+    width: 4rem;
+}
+.banner-logo {
+    width: 8rem;
 }
 
 .header-agile {
@@ -598,8 +612,9 @@ li>a:only-child:after {
         text-decoration: none;
         border: none;
         float: right;
-        background-color: #00bbd1;
-        color: #fff;
+        /* background-color: var(--primary-color); */
+        /* color: #fff; */
+        color: var(--primary-color);
     }
 
     .menu .toggle {
@@ -756,7 +771,7 @@ li>a:only-child:after {
 
 .bottom-gd-icon span {
     font-size: 2em;
-    color: #ff3c41;
+    color: var(--primary-color);
 }
 
 .bottom-gd-ser {
@@ -861,7 +876,7 @@ section#gallery {
 }
 
 .popup .close:hover {
-    color: #ff3c41;
+    color: var(--primary-color);
 }
 
 /*-- //popup --*/
@@ -892,7 +907,7 @@ p.text-li {
 }
 
 .stats-grid-w3-agile .icon-right-w3ls {
-    background: #ff3c41;
+    background: var(--primary-color);
     width: 65px;
     height: 65px;
     line-height: 65px;
@@ -966,7 +981,7 @@ p.text-li {
 }
 
 .contact button.btn {
-    background: #ff3c41;
+    background: var(--primary-color);
     font-size: 17px;
     display: inline-block;
     color: #fff;
@@ -1131,7 +1146,7 @@ footer {
 a.move-top {
     color: #fff;
     font-size: 20px;
-    background: #ff3c41;
+    background: var(--primary-color);
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -1483,7 +1498,8 @@ a.move-top {
 .banner-view {
     background: url(../images/banner1.jpg) no-repeat center;
     background-size: cover;
-    min-height: 850px;
+    /* min-height: 850px; */
+    min-height: 100vh !important;
     position: relative;
     z-index: 0;
     display: grid;
