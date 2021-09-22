@@ -5,7 +5,7 @@ function isMobile() {
 };
 
 function SendWhatsapp() {
-  const endpoint = "send?phone=5528973146&text=¡Hola! Me puedes ayudar con mi pedido.";
+  const endpoint = "send?phone=+525528973146&text=¡Hola! Me puedes ayudar con mi pedido.";
   wcta = document.getElementsByClassName('wcta');
   for(let i=0; i<wcta.length; i++) {
     
