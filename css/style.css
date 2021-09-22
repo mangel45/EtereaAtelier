@@ -108,7 +108,7 @@ a.navbar-brand {
     text-transform: capitalize;
     color: #ddd;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
     padding: 0 0.1rem;
 }
@@ -631,14 +631,14 @@ li>a:only-child:after {
     }
 
     .toggle:hover {
-        color: #333;
-        background-color: #fff;
+        color: #fff;
+        background-color: var(--primary-color);
     }
 
     /* Display Dropdown when clicked on Parent Lable */
     [id^=drop]:checked+ul {
         display: block;
-        background: #fff;
+        background: var(--primary-color);
         padding: 15px 0;
         text-align: center;
     }
@@ -1182,8 +1182,13 @@ a.move-top {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     margin-bottom: 20px;
-    display: inline-block;
-    
+    display: inline-block;    
+    z-index: 99999999;    
+}
+
+a.whatsapp:active, a.whatsapp:hover, a.whatsapp:focus, a.whatsapp:visited {
+    color: #fff;
+    text-decoration: none;
 }
 /*--// Whatsapp --*/
 
